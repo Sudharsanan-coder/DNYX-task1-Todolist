@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script defer src="./todolist.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-center mb-6">To-Do List</h1>
+
+        <!-- Add Task Form -->
+        <div class="flex justify-center mb-6">
+            <input  id="taskInput" placeholder="Enter a task" class="border p-2 rounded-lg w-2/3">
+            <button id="addTaskBtn" class="ml-4 bg-yellow-500 text-white p-2 rounded-lg">Add Task</button>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex justify-center mb-6">
+            <button id="showAll" class="mx-2 bg-yellow-200 p-2 rounded-lg">All</button>
+            <button id="showCompleted" class="mx-2 bg-yellow-200 p-2 rounded-lg">Completed</button>
+            <button id="showPending" class="mx-2 bg-yellow-200 p-2 rounded-lg">Pending</button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="taskList" class="bg-white rounded-lg shadow-lg p-6 max-w-lg mx-auto">
+            
+        </ul>
+    </div>
+</body>
+</html>
